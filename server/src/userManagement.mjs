@@ -229,7 +229,7 @@ function addUser(userId) {
       ws.isAlive = false;
       ws.ping();
     });
-  }, 30000);
+  }, 300000);
 
   wss.on('close', function close() {
     clearInterval(interval);
